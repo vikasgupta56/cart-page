@@ -1,0 +1,41 @@
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+.cartcontainer{
+    margin: 10px 10vw;
+    width: 80vw;
+    height: 220px;
+    border: 2px solid black;
+}
+.flexrow{
+    display: flex;
+    flex-direction: row;
+}
+.cartimg{
+    margin:20px;
+    width: 200px;
+    height: 200px;
+}
+.cartfruitname{
+    font-weight: bolder;
+    font-size: 32px;
+margin-top: 9px;
+}
+.cartfruitmrp{
+    font-size: 20px;
+    margin: 20px 0px;
+}
+.cartfruitno{
+    font-size: 20px;
+}
+.deleteitembutton{
+    height: 30px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    margin-top:20px;
+    background-color: black;
+    font-size: 20px;
+}
