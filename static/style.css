@@ -187,7 +187,7 @@ body{
         height: 30px;
         width: 40px;
       top: 530px;
-      left: 1270px;
+      left: 1110px;
     }
 }
 @keyframes second {
@@ -200,7 +200,7 @@ body{
         height: 30px;
         width: 40px;
       top: 530px;
-      left: 950px;
+      left: 850px;
     }
 }
 @keyframes third {
@@ -213,7 +213,7 @@ body{
         height: 30px;
         width: 40px;
       top: 530px;
-      left: 657px;
+      left: 557px;
     }
 }
 @keyframes fourth {
