@@ -1,0 +1,231 @@
+.bgnav{
+    background-color: gray;
+    color: white;;
+}
+.a2{
+    background-color: cornsilk;
+    border-style: none;
+}
+.cart{
+    margin-right: 30px;
+}
+.logo{
+    margin-left: 30px;
+}
+.dropdown{
+    margin-left: 45px;
+}
+
+.search{
+    background-color: darkorange;
+    color: white;
+}
+.search:hover {
+    color: black;
+}
+.y{
+    margin-right: 13px;
+}
+body{
+    background-color: cornsilk;
+}
+.card:hover{
+    box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+}
+.logo{
+    border-radius: 50%;
+}
+.Dropdown{
+    color: white;
+}
+.searchnav{
+    margin-left: 5%;
+}
+@media only screen and (min-width:760px) and (max-width:990px) {
+    .responsive{
+        width:70%;
+    }
+    
+}
+@media only screen and (min-width:600px) and (max-width:767px) {
+    .responsive1{
+        font-size: 12px;
+    }
+    
+}
+@media only screen and (min-width:600px) and (max-width:767px) {
+    .responsive2{
+        font-size: 10px;
+    }
+    
+}
+
+@media only screen and (min-width:600px) and (max-width:767px) {
+    .responsive{
+        width: 60%;
+    }
+    
+}
+@media only screen and (min-width:600px) and (max-width:767px) {
+    .responsive4{
+        font-size: 7px; 
+    }
+    
+}
+@media only screen and (min-width:600px) and (max-width:767px) {
+    .responsive5{
+        height: 300px;
+    }    
+}
+@media only screen and (min-width:600px) and (max-width:767px) {
+    .responsive6{
+        height: 320px;
+    }    
+}
+@media only screen and (min-width:575px) and (max-width:599px) {
+    .responsive1{
+        font-size: 10px;
+    }    
+}
+@media only screen and (min-width:575px) and (max-width:599px) {
+    .responsive2{
+        font-size: 8px;
+    }    
+}
+@media only screen and (min-width:575px) and (max-width:599px) {
+    .responsive{
+        width: 60%;
+    }    
+}
+@media only screen and (min-width:575px) and (max-width:599px) {
+    .responsive4{
+        font-size: 5px;
+        
+
+    }    
+}
+@media only screen and (min-width:500px) and (max-width:575px) {
+    .responsive7{
+        height: 270px;
+    }    
+}
+@media only screen and (min-width:991px) and (max-width:1200px) {
+    .searchres{
+        width: 250px;
+    }    
+}
+.addbtn{
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: #0d6efd;
+    border-radius: .25rem;
+    height: 38px;
+    width: 120px;
+    text-align: center;
+
+   
+
+}.stik{
+    position: relative;
+    top: 15px;
+}
+.hil{
+    float: right;
+    justify-content: center;
+    text-align: center;
+
+    background-color: white;
+    border-radius: 50px;
+    height: 70px;
+    width: 70px;
+    position: relative;
+    right: -90px;
+    top: -20px;
+    box-shadow: 7px 5px 20px rgba(0,0,0,0.5);
+}
+#first{
+    z-index: 2;
+    animation-name: first;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    /* animation-timing-function: ease-in-out; */
+    animation-fill-mode: alternate;
+    
+}
+#second{
+    z-index: 3;
+    animation-name: second;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    /* animation-timing-function: ease-in-out; */
+    animation-fill-mode: alternate;
+}
+#third{
+    z-index: 3;
+    animation-name: third;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    /* animation-timing-function: ease-in-out; */
+    animation-fill-mode: alternate;
+}#fourth{
+    z-index: 3;
+    animation-name: fourth;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    /* animation-timing-function: ease-in-out; */
+    animation-fill-mode: alternate;
+}
+@keyframes first {
+    from{top: 0px;
+        left: 0px;
+        
+        
+    }
+    to{
+        height: 30px;
+        width: 40px;
+      top: 530px;
+      left: 1270px;
+    }
+}
+@keyframes second {
+    from{top: 0px;
+        left: 0px;
+        
+        
+    }
+    to{
+        height: 30px;
+        width: 40px;
+      top: 530px;
+      left: 950px;
+    }
+}
+@keyframes third {
+    from{top: 0px;
+        left: 0px;
+        
+        
+    }
+    to{
+        height: 30px;
+        width: 40px;
+      top: 530px;
+      left: 657px;
+    }
+}
+@keyframes fourth {
+    from{top: 0px;
+        left: 0px;
+        
+        
+    }
+    to{
+        height: 30px;
+        width: 40px;
+      top: 530px;
+      left: 290px;
+    }
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/style.css">
+    
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bgnav">
+    <div class="container-fluid">
+        <img src="static/logo.png" class="logo" alt="Not Found" height="100px" width="100px">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown dropdown">
+            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="Dropdown">SHOP BY CATEGORY</span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/Grocery1">Home</a></li>
+              <li><a class="dropdown-item" href="/Fruits" >Fruits</a></li>
+              <li><a class="dropdown-item" href="/Vegetables">Vegetables</a></li>
+              <li><a class="dropdown-item" href="/Beverages">Beverages</a></li>
+              <li><a class="dropdown-item" href="#">Snacks</a></li>
+
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex searchres" style="margin-right: 20%;">
+          <input class="form-control me-2" style="width: 400px;" type="search" placeholder="Search" aria-label="Search" >
+          <button class="btn  search" type="submit">Search</button>
+        </form>
+        <br>
+        <a href="/cart"><button style="font-size:20px; background-color: black;color: white;" class="cart"><i  class="fa fa-shopping-cart ">Cart</i></button></a>
+        <button onclick="change()" style="font-size:20px; background-color: black;color: white;"  class="cart">Logout</button>
+        
+     </div>
+    </div>
+  </nav>
+
+      <!--Main Section-->
+
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12">
+                  <h1 class="text-center text-capitalize">Featured Products</h1>
+              </div>
+          </div>
+    
+          <hr>
+        <div class="container-fluid">
+          <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-3">
+                 <div class="card responsive5">
+                    <img src="static/mango.png" class="card-img-top responsive7 prodimg" alt="..." height="230px">
+                    <img src="static/mango.png" style="position: absolute;"  class="card-img-top responsive7 prodimg" alt="..." height="230px">
+                    <hr>
+                    <div class="card-body">
+                      <h5 class="card-title responsive1 productTitle">Mango</h5>
+                      <p class="card-text responsive2 "><p class="productPrice">MRP : 1 dozen - 300Rs</p> <br> Quantity : <input type="number"  min="1" name="mango" class="responsive quan" id="Mango"></p>
+                      <button class="addbtn" id="firstbut">Add to Cart</button>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-3 ">
+                <div class="card responsive5" >
+                    <img src="static/apple.png" class="card-img-top responsive7 prodimg" alt="..." height="230px" >
+                    <img src="static/apple.png" style="position: absolute;" class="card-img-top responsive7 prodimg" alt="..." height="230px" >
+                    <hr>
+                    <div class="card-body">
+                      <h5 class="card-title responsive1 productTitle">Apple</h5>
+                      <p class="card-text responsive2 "><p class="productPrice">MRP : 1 dozen - 200Rs</p> <br> Quantity : <input type="number" min="1" name="apple" id="Apple" class="responsive quan"></p>
+                      <button class="addbtn" id="secondbut">Add to Cart</button>                    
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="card responsive5" >
+                    <img src="static/guava.png" class="card-img-top responsive7 prodimg" alt="..." height="230px" >
+                    <img src="static/guava.png" style="position: absolute;" class="card-img-top responsive7 prodimg" alt="..." height="230px" >
+                    <hr>
+                    <div class="card-body">
+                      <h5 class="card-title responsive1 productTitle">Guava</h5>
+                      <p class="card-text responsive2 "><p class="productPrice">MRP : 1 dozen - 350 Rs</p> <br> Quantity : <input type="number"class="responsive quan" min="1" name="guava" id="Guava"></p>
+                      <button class="addbtn" id="thirdbut">Add to Cart</button>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="card responsive5" >
+                    <img src="static/orange.png" class="card-img-top responsive7 prodimg" alt="..." height="230px">
+                    <img src="static/orange.png" style="position: absolute;" class="card-img-top responsive7 prodimg" alt="..." height="230px">
+                    <hr>
+                    <div class="card-body">
+                      <h5 class="card-title responsive1 productTitle">Orange</h5>
+                      <p class="card-text responsive2 "><p class="productPrice">MRP : 1 dozen -  50Rs</p> <br> Quantity : <input type="number" class="responsive quan" min="1" name="orange" id="Orange"></p>
+                      <button class="addbtn" id="fourthbut">Add to Cart</button>                    </div>
+                  </div>
+              </div>
+          </div>
+          <a href="/cart"><div class="hil"><i class="fa fa-shopping-cart stik" style="font-size:48px;color:red"></i></div></a>
+      </div>
+      </div>
+
+
+
+   
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/" style="color: black;"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
+<script src="static/main.js"></script>
+<!-- <script src="Grocery.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+</body>
+</html>

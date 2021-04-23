@@ -27,8 +27,7 @@ let html = "";
   else{
     flex.innerHTML = "Cart is empty.";
   }
- 
-  hw.innertext = a;
+
  
   function deleteelm(index){
     let notes = localStorage.getItem("notes");
